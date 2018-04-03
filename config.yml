@@ -73,7 +73,7 @@ Processors:
   - failure
   - success
   Properties:
-    Broker URI: tcp://m13.cloudmqtt.com:17769
+    Broker URI: tcp://server:88888
     Client ID: minifijetson
     Connection Timeout (seconds): '30'
     Keep Alive Interval (seconds): '60'
@@ -82,13 +82,13 @@ Processors:
     Last Will Retain:
     Last Will Topic:
     MQTT Specification Version: '0'
-    Password: 5Ox2ZIbLor7z
+    Password: test1
     Quality of Service(QoS): '1'
     Retain Message: 'false'
     SSL Context Service:
     Session state: 'true'
     Topic: JETSON
-    Username: zvrxunpj
+    Username: test2
 Controller Services: []
 Process Groups: []
 Input Ports: []
