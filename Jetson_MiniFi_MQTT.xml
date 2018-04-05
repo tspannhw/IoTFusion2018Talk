@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>6ceb3410-0162-1000-9671-611f5033539e</groupId>
+    <name>Jetson MiniFi MQTT</name>
+    <snippet>
+        <processGroups>
+            <id>05f693aa-3ca9-3980-0000-000000000000</id>
+            <parentGroupId>a519e49c-0695-3dc0-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <versionedComponentId>05f693aa-3ca9-3980-b5a0-55fb7f4b398c</versionedComponentId>
+            <comments></comments>
+            <contents>
+                <connections>
+                    <id>ea3da9a6-313a-3a3a-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>8e6dbdf4-3926-3cce-0000-000000000000</groupId>
+                        <id>db28325a-9f1f-1e86-6e14-f7699652f941</id>
+                        <type>REMOTE_INPUT_PORT</type>
+                        <versionedComponentId>aeb8cfe2-0b4d-3136-917f-7ed2ab57593e</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>05f693aa-3ca9-3980-0000-000000000000</groupId>
+                        <id>b82ef00e-d5fc-36a7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>56d2838d-7391-3ddf-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>8e6dbdf4-3926-3cce-0000-000000000000</groupId>
+                        <id>db28325a-9f1f-1e86-6e14-f7699652f941</id>
+                        <type>REMOTE_INPUT_PORT</type>
+                        <versionedComponentId>aeb8cfe2-0b4d-3136-917f-7ed2ab57593e</versionedComponentId>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>05f693aa-3ca9-3980-0000-000000000000</groupId>
+                        <id>6c415661-f29a-3f5a-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <connections>
+                    <id>58a4d730-d49e-3c8d-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+                    <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+                    <destination>
+                        <groupId>05f693aa-3ca9-3980-0000-000000000000</groupId>
+                        <id>4ae114de-c865-3ec0-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </destination>
+                    <flowFileExpiration>0 sec</flowFileExpiration>
+                    <labelIndex>1</labelIndex>
+                    <name></name>
+                    <selectedRelationships>success</selectedRelationships>
+                    <source>
+                        <groupId>05f693aa-3ca9-3980-0000-000000000000</groupId>
+                        <id>b82ef00e-d5fc-36a7-0000-000000000000</id>
+                        <type>PROCESSOR</type>
+                    </source>
+                    <zIndex>0</zIndex>
+                </connections>
+                <processors>
+                    <id>b82ef00e-d5fc-36a7-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1780.0</x>
+                        <y>541.0</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.5.0.3.1.1.0-35</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Command</key>
+<value>
+    <name>Command</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Command Arguments</key>
+<value>
+    <name>Command Arguments</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Duration</key>
+<value>
+    <name>Batch Duration</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Redirect Error Stream</key>
+<value>
+    <name>Redirect Error Stream</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+<value>
+    <name>Working Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value>
+    <name>Argument Delimiter</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Command</key>
+<value>/media/nvidia/96ed93f9-7c40-4999-85ba-3eb24262d0a5/mxclassify.sh</value>
+                            </entry>
+                            <entry>
+<key>Command Arguments</key>
+                            </entry>
+                            <entry>
+<key>Batch Duration</key>
+                            </entry>
+                            <entry>
+<key>Redirect Error Stream</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Working Directory</key>
+                            </entry>
+                            <entry>
+<key>Argument Delimiter</key>
+<value> </value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>60 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <name>Capture Photo and MXClassify</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.ExecuteProcess</type>
+                </processors>
+                <processors>
+                    <id>4ae114de-c865-3ec0-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>1495.0000130789622</x>
+                        <y>955.34814453125</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-mqtt-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.5.0.3.1.1.0-35</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Broker URI</key>
+<value>
+    <name>Broker URI</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Client ID</key>
+<value>
+    <name>Client ID</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>
+    <name>Username</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>
+    <name>Password</name>
+</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+<value>
+    <identifiesControllerService>org.apache.nifi.ssl.SSLContextService</identifiesControllerService>
+    <name>SSL Context Service</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Will Topic</key>
+<value>
+    <name>Last Will Topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Will Message</key>
+<value>
+    <name>Last Will Message</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Will Retain</key>
+<value>
+    <name>Last Will Retain</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Last Will QoS Level</key>
+<value>
+    <name>Last Will QoS Level</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Session state</key>
+<value>
+    <name>Session state</name>
+</value>
+                            </entry>
+                            <entry>
+<key>MQTT Specification Version</key>
+<value>
+    <name>MQTT Specification Version</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout (seconds)</key>
+<value>
+    <name>Connection Timeout (seconds)</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Keep Alive Interval (seconds)</key>
+<value>
+    <name>Keep Alive Interval (seconds)</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Topic</key>
+<value>
+    <name>Topic</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Quality of Service(QoS)</key>
+<value>
+    <name>Quality of Service(QoS)</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Retain Message</key>
+<value>
+    <name>Retain Message</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Broker URI</key>
+<value>tcp://m13.cloudmqtt.com:17769</value>
+                            </entry>
+                            <entry>
+<key>Client ID</key>
+<value>minifijetson</value>
+                            </entry>
+                            <entry>
+<key>Username</key>
+<value>zvrxunpj</value>
+                            </entry>
+                            <entry>
+<key>Password</key>
+<value>5Ox2ZIbLor7z</value>
+                            </entry>
+                            <entry>
+<key>SSL Context Service</key>
+                            </entry>
+                            <entry>
+<key>Last Will Topic</key>
+                            </entry>
+                            <entry>
+<key>Last Will Message</key>
+                            </entry>
+                            <entry>
+<key>Last Will Retain</key>
+                            </entry>
+                            <entry>
+<key>Last Will QoS Level</key>
+                            </entry>
+                            <entry>
+<key>Session state</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>MQTT Specification Version</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>Connection Timeout (seconds)</key>
+<value>30</value>
+                            </entry>
+                            <entry>
+<key>Keep Alive Interval (seconds)</key>
+<value>60</value>
+                            </entry>
+                            <entry>
+<key>Topic</key>
+<value>JETSON</value>
+                            </entry>
+                            <entry>
+<key>Quality of Service(QoS)</key>
+<value>1</value>
+                            </entry>
+                            <entry>
+<key>Retain Message</key>
+<value>false</value>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>0 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <name>PublishMQTT</name>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>failure</name>
+                    </relationships>
+                    <relationships>
+                        <autoTerminate>true</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.mqtt.PublishMQTT</type>
+                </processors>
+                <processors>
+                    <id>6c415661-f29a-3f5a-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2369.858106582864</x>
+                        <y>546.3328413496026</y>
+                    </position>
+                    <bundle>
+                        <artifact>nifi-standard-nar</artifact>
+                        <group>org.apache.nifi</group>
+                        <version>1.5.0.3.1.1.0-35</version>
+                    </bundle>
+                    <config>
+                        <bulletinLevel>WARN</bulletinLevel>
+                        <comments></comments>
+                        <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                        <descriptors>
+                            <entry>
+<key>Input Directory</key>
+<value>
+    <name>Input Directory</name>
+</value>
+                            </entry>
+                            <entry>
+<key>File Filter</key>
+<value>
+    <name>File Filter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Path Filter</key>
+<value>
+    <name>Path Filter</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>
+    <name>Batch Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Keep Source File</key>
+<value>
+    <name>Keep Source File</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Recurse Subdirectories</key>
+<value>
+    <name>Recurse Subdirectories</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Polling Interval</key>
+<value>
+    <name>Polling Interval</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Ignore Hidden Files</key>
+<value>
+    <name>Ignore Hidden Files</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Age</key>
+<value>
+    <name>Minimum File Age</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Age</key>
+<value>
+    <name>Maximum File Age</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Size</key>
+<value>
+    <name>Minimum File Size</name>
+</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Size</key>
+<value>
+    <name>Maximum File Size</name>
+</value>
+                            </entry>
+                        </descriptors>
+                        <executionNode>ALL</executionNode>
+                        <lossTolerant>false</lossTolerant>
+                        <penaltyDuration>30 sec</penaltyDuration>
+                        <properties>
+                            <entry>
+<key>Input Directory</key>
+<value>/media/nvidia/96ed93f9-7c40-4999-85ba-3eb24262d0a5/images</value>
+                            </entry>
+                            <entry>
+<key>File Filter</key>
+<value>[^\.].*</value>
+                            </entry>
+                            <entry>
+<key>Path Filter</key>
+                            </entry>
+                            <entry>
+<key>Batch Size</key>
+<value>25</value>
+                            </entry>
+                            <entry>
+<key>Keep Source File</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Recurse Subdirectories</key>
+<value>true</value>
+                            </entry>
+                            <entry>
+<key>Polling Interval</key>
+<value>0 sec</value>
+                            </entry>
+                            <entry>
+<key>Ignore Hidden Files</key>
+<value>false</value>
+                            </entry>
+                            <entry>
+<key>Minimum File Age</key>
+<value>17 sec</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Age</key>
+                            </entry>
+                            <entry>
+<key>Minimum File Size</key>
+<value>256 B</value>
+                            </entry>
+                            <entry>
+<key>Maximum File Size</key>
+                            </entry>
+                        </properties>
+                        <runDurationMillis>0</runDurationMillis>
+                        <schedulingPeriod>30 sec</schedulingPeriod>
+                        <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                        <yieldDuration>1 sec</yieldDuration>
+                    </config>
+                    <name>GetFile</name>
+                    <relationships>
+                        <autoTerminate>false</autoTerminate>
+                        <name>success</name>
+                    </relationships>
+                    <state>RUNNING</state>
+                    <style/>
+                    <type>org.apache.nifi.processors.standard.GetFile</type>
+                </processors>
+                <remoteProcessGroups>
+                    <id>8e6dbdf4-3926-3cce-0000-000000000000</id>
+                    <parentGroupId>05f693aa-3ca9-3980-0000-000000000000</parentGroupId>
+                    <position>
+                        <x>2016.8766149566989</x>
+                        <y>973.8295669555664</y>
+                    </position>
+                    <comments></comments>
+                    <communicationsTimeout>60 sec</communicationsTimeout>
+                    <contents>
+                        <inputPorts>
+                            <batchSettings/>
+                            <comments></comments>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <connected>false</connected>
+                            <exists>true</exists>
+                            <groupId>db283258-9f1f-1e86-febc-04909421ce1c</groupId>
+                            <id>db283259-9f1f-1e86-9012-4ee81f0a34c7</id>
+                            <name>MiniFi TensorFlowImage</name>
+                            <targetId>6d64516b-0162-1000-e11c-c47547c24913</targetId>
+                            <targetRunning>true</targetRunning>
+                            <transmitting>false</transmitting>
+                            <useCompression>false</useCompression>
+                            <versionedComponentId>ba3836f1-7950-3637-80cf-5c862ec4c6ba</versionedComponentId>
+                        </inputPorts>
+                        <inputPorts>
+                            <batchSettings/>
+                            <comments></comments>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <connected>true</connected>
+                            <exists>true</exists>
+                            <groupId>db283258-9f1f-1e86-febc-04909421ce1c</groupId>
+                            <id>db28325a-9f1f-1e86-6e14-f7699652f941</id>
+                            <name>MiniFi From TX1 Jetson</name>
+                            <targetId>6de3c332-0162-1000-598d-55b56a24d210</targetId>
+                            <targetRunning>true</targetRunning>
+                            <transmitting>true</transmitting>
+                            <useCompression>false</useCompression>
+                            <versionedComponentId>aeb8cfe2-0b4d-3136-917f-7ed2ab57593e</versionedComponentId>
+                        </inputPorts>
+                        <inputPorts>
+                            <batchSettings/>
+                            <comments></comments>
+                            <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                            <connected>false</connected>
+                            <exists>true</exists>
+                            <groupId>db283258-9f1f-1e86-febc-04909421ce1c</groupId>
+                            <id>db28325b-9f1f-1e86-9348-4b4cb83edc87</id>
+                            <name>Movidius Input</name>
+                            <targetId>6d74163b-0162-1000-23d0-4f833044ca08</targetId>
+                            <targetRunning>true</targetRunning>
+                            <transmitting>false</transmitting>
+                            <useCompression>false</useCompression>
+                            <versionedComponentId>b4f2dbc3-a585-3ec4-84d4-9f2940bbe2b9</versionedComponentId>
+                        </inputPorts>
+                    </contents>
+                    <proxyHost></proxyHost>
+                    <proxyUser></proxyUser>
+                    <targetUri>http://hw13125.local:8080/nifi</targetUri>
+                    <targetUris>http://hw13125.local:8080/nifi</targetUris>
+                    <transportProtocol>HTTP</transportProtocol>
+                    <yieldDuration>10 sec</yieldDuration>
+                </remoteProcessGroups>
+            </contents>
+            <name>Jetson MiniFi MQTT</name>
+            <variables/>
+            <versionControlInformation>
+                <bucketId>dd323482-c62e-4b18-9f99-c782abd512b4</bucketId>
+                <bucketName>Development</bucketName>
+                <flowDescription></flowDescription>
+                <flowId>58c887f4-1cfb-4a7c-b732-4b31b260df7e</flowId>
+                <flowName>MiniFi Jetson MQTT</flowName>
+                <registryId>6ced49b8-0162-1000-0a28-eea069e2b827</registryId>
+                <registryName>Local Registry</registryName>
+                <state>LOCALLY_MODIFIED</state>
+                <stateExplanation>Local changes have been made</stateExplanation>
+                <version>1</version>
+            </versionControlInformation>
+        </processGroups>
+    </snippet>
+    <timestamp>04/02/2018 16:55:41 EDT</timestamp>
+</template>
